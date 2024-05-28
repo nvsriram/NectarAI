@@ -13,6 +13,15 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      colors: {
+        "dynamic-base-1": "var(--dynamic-base-1)",
+        "dynamic-base-2": "var(--dynamic-base-2)",
+        "dynamic-base-3": "var(--dynamic-base-3)",
+        "dynamic-base-4": "var(--dynamic-base-4)",
+        "dynamic-button-primary-background":
+          "var(--dynamic-button-primary-background)",
+        "dynamic-text-secondary": "var(--dynamic-text-secondary)",
+      },
     },
   },
   plugins: [],
