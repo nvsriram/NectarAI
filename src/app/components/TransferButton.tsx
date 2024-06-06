@@ -20,11 +20,13 @@ export const TransferButton = () => {
 
   return (
     <button
-      className="flex flex-row text-sm focus:text-emerald-500 hover:text-emerald-500 active:text-emerald-500 focus:border-emerald-500 hover:border-emerald-500 active:border-emerald-500 items-center justify-center gap-3 p-2 border border-slate-400 rounded-lg"
+      className="flex flex-row text-sm transition-all ease-in-out duration-200 focus:text-emerald-500 hover:text-emerald-500 active:text-emerald-500 focus:border-emerald-500 hover:border-emerald-500 active:border-emerald-500 items-center justify-center gap-3 p-2 border border-slate-400 rounded-lg"
       onClick={handleTransfer}
     >
-      Transfer to
-      <span>{displayAddress(DEST_ADDRESS)}</span>
+      <p className="whitespace-nowrap">
+        Transfer to{" "}
+        <span className="font-mono">{displayAddress(DEST_ADDRESS)}</span>
+      </p>
       <ArrowRightIcon />
     </button>
   );
