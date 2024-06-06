@@ -7,32 +7,6 @@ export const TransferButton = () => {
   const { open } = useSendBalance();
 
   const handleTransfer = async () => {
-    // if (!primaryWallet) {
-    //   return;
-    // }
-
-    // const provider = (await primaryWallet.connector.getSigner<
-    //   WalletClient<Transport, Chain, Account>
-    // >());
-
-    // if (!provider) return;
-
-    // const transaction = {
-    //   account: primaryWallet.address as Hex,
-    //   chain: getChain(await provider.getChainId()),
-    //   to: DEST_ADDRESS as Hex,
-    //   value: 1000,
-    // };
-
-    // const hash = await provider.sendTransaction(transaction);
-
-    // const client =
-    //   await primaryWallet.connector.getPublicClient<PublicClient>();
-
-    // const { transactionHash } = await client.getTransactionReceipt({
-    //   hash,
-    // });
-    // console.log(transactionHash);
     try {
       const tx = await open({
         recipientAddress: DEST_ADDRESS,
